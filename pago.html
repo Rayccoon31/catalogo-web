@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pago - Barber Studio</title>
+  <script src="scripts/script.js" defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -84,23 +85,5 @@
             <p class="text-sm text-gray-400">© 2026 Barber Studio. Todos los derechos reservados.</p>
         </div>
     </footer>
-
-    <script>
-        function copiarNumero(btn, numero) {
-            navigator.clipboard.writeText(numero).then(() => {
-                const textoOriginal = btn.innerHTML;
-                btn.innerHTML = '<span class="text-xs">¡Copiado!</span>';
-                btn.classList.remove('bg-blue-500', 'hover:bg-blue-600');
-                btn.classList.add('bg-green-500', 'hover:bg-green-600');
-                
-                setTimeout(() => {
-                    btn.innerHTML = textoOriginal;
-                    btn.classList.remove('bg-green-500', 'hover:bg-green-600');
-                    btn.classList.add('bg-blue-500', 'hover:bg-blue-600');
-                }, 2000);
-            });
-        }
-    </script>
-
 </body>
 </html>

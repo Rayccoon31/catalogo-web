@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barber Studio
   </title>
+  <script src="scripts/script.js" defer></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/styles.css">
   <style>
@@ -131,25 +132,5 @@ bg-gradient-to-b from-black  to-gray-500">
             </div>
         </div>
     </div>
-
-    <script>
-        function abrirModal() {
-            const modal = document.getElementById('modalHorarios');
-            modal.style.display = 'flex';
-        }
-        
-        function cerrarModal() {
-            const modal = document.getElementById('modalHorarios');
-            modal.style.display = 'none';
-        }
-        
-        document.getElementById('modalHorarios').addEventListener('click', function(e) {
-            if (e.target === this) {
-                cerrarModal();
-            }
-        });
-    </script>
-
-    <script src="js/main.js"></script>
 </body>
-</html>:
+</html>
