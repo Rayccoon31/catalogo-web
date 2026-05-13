@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Barber Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="max-w-xl mx-auto border border-black min-h-dvh bg-gradient-to-b from-black to-gray-500">
+    <!-- Botón de regresar fijo -->
+    <a href="index.html" class="fixed top-4 left-4 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition z-50" title="Regresar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 19l-7-7 7-7"></path>
+        </svg>
+    </a>
+
+    <header class="text-white flex items-center justify-between px-4 py-4">
+    </header>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="py-8 px-4 text-white precios-container min-h-96">
+        <img alt="Barber Studio Logo Fondo" src="assets/img/logo.webp" class="logo-bg">
+        <div class="precios-content">
+            <h2 class="text-2xl font-bold mb-6 text-left">Productos</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <!-- Producto 1: Pomada Premium -->
+                <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                    <div class="flex items-center justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                        <img src="./assets/img/gel.jpg" alt="Gel" class="max-w-xs h-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-4 flex flex-col justify-center flex-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-300">Gel</p>
+                        <p class="text-2xl font-bold text-gray-300">$none</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2: Gel Estilizador -->
+                <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                    <div class="flex items-center justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                        <img src="./assets/img/cera.jpg" alt="Cera" class="max-w-xs h-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-4 flex flex-col justify-center flex-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-300">Cera</p>
+                        <p class="text-2xl font-bold text-gray-300">$none</p>
+                    </div>
+                </div>
+
+                <!-- Producto 3: Aceite para Barba -->
+                <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                    <div class="flex items-center justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                        <img src="./assets/img/polvo_texturizador.jpg" alt="Aceite para Barba" class="max-w-xs h-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-4 flex flex-col justify-center flex-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-300">Polvo Texturizador</p>
+                        <p class="text-2xl font-bold text-gray-300">$none</p>
+                    </div>
+                </div>
+
+                <!-- Producto 4: Loción Aftershave -->
+                <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                    <div class="flex items-center justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                        <img src="./assets/img/aceite_barba.jpg" alt="Aceite para Barba" class="max-w-xs h-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-4 flex flex-col justify-center flex-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-300">Aceite para Barba</p>
+                        <p class="text-2xl font-bold text-gray-300">$none</p>
+                    </div>
+                </div>
+                
+                <!-- Producto 5: Lentes de Sol -->
+                <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                    <div class="flex items justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                        <img src="./assets/img/lentes.jpg" alt="Lentes de Sol" class="max-w-xs h-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-4 flex flex-col justify-center flex-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-300">Lentes de Sol</p>
+                        <p class="text-2xl font-bold text-gray-300">$none</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Botón Flotante para Agendar por WhatsApp -->
+    <a href="https://wa.me/526462413522" class="fixed bottom-8 right-4 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition transform hover:scale-110 z-40" title="Agendar cita por WhatsApp" target="_blank" rel="noopener noreferrer">
+        <svg width="24" height="24">
+            <use xlink:href="assets/icons/sprite.svg#icon-whatsapp"></use>
+        </svg>
+    </a>
+
+    <!-- Footer con Redes Sociales -->
+    <footer class="bg-black/90 text-white py-6 px-4 mt-8 border-t border-gray-700">
+        <div class="flex flex-col items-center gap-4">
+            <h3 class="font-semibold text-lg">Síguenos</h3>
+            <div class="flex gap-4 justify-center">
+                <a class="bg-blue-700 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform" href="https://www.facebook.com/profile.php?id=61581620253403&locale=es_LA" target="_blank" rel="noopener noreferrer">
+                    <svg width="28" height="28">
+                        <use xlink:href="assets/icons/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a class="bg p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-900" href="https://www.instagram.com/barberstudio/" target="_blank" rel="noopener noreferrer">
+                    <svg width="28" height="28">
+                        <use xlink:href="assets/icons/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <a class="bg-slate-900 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform" href="https://www.tiktok.com/@barberstudio" target="_blank" rel="noopener noreferrer">
+                    <svg width="28" height="28">
+                        <use xlink:href="assets/icons/sprite.svg#icon-tiktok"></use>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-sm text-gray-400">© 2026 Barber Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

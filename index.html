@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barber Studio
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    .logo-fade {
+      mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    }
+  </style>
+</head>
+<body class="max-w-xl mx-auto
+border border-black
+min-h-dvh
+bg-gradient-to-b from-black  to-gray-500">
+    <header class="text-white" id="inicio">
+        <img alt="Barber Studio Logo" src="assets/img/logo.webp" class="logo-fade w-full">
+        <h1 class="text-center text-2xl font-bold py-2">Barber Studio</h1>
+        <!-- Navegación -->
+        <nav class="flex justify-center gap-6 pb-6 text-sm md:text-base">
+            <a href="precios.html" class="hover:text-blue-400 transition font-semibold">Precio Cortes</a>
+            <a href="productos.html" class="hover:text-blue-400 transition font-semibold">Productos</a>
+            <a href="pago.html" class="hover:text-blue-400 transition font-semibold">Pago</a>
+            <a href="#redes" class="hover:text-blue-400 transition font-semibold">Síguenos</a>
+        </nav>
+    </header>
+
+
+    <!-- Sección de Trabajos Hechos -->
+    <section id="trabajos" class="py-8 px-4 text-white">
+        <h2 class="text-2xl font-bold mb-6 text-center">Nuestros Servicios</h2>
+        <div class="space-y-4">
+
+            <!-- Botón de Horarios -->
+            <button onclick="abrirModal()" class="w-full text-left bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-blue-500 transition cursor-pointer hover:bg-gray-800/70">
+                <h3 class="font-bold text-lg mb-2">Horarios y Ubicación</h3>
+                <p class="text-gray-300 text-sm mb-2">Consulta nuestros horarios de atención y ubicación</p>
+            </button> 
+            <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                <div class="flex items-center justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                    <img src="./assets/img/corte_estilizado2.webp" alt="Corte + Estilizado" class="max-w-xs h-full object-contain rounded-lg">
+                </div>
+                <div class="p-4 flex flex-col justify-center flex-1">
+                    <p class="text-2xl font-bold text-gray-300">Corte + Estilizado</p>
+                </div>
+            </div>
+            <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                <div class="flex items-center justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                    <img src="./assets/img/corte_be.webp" alt="Barba" class="max-w-xs h-full object-contain rounded-lg">
+                </div>
+                <div class="p-4 flex flex-col justify-center flex-1">
+                    <p class="text-2xl font-bold text-gray-300">Corte + Estilizado + Barba</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Botón Flotante para Agendar por WhatsApp -->
+    <a href="https://wa.me/526462413522" class="fixed bottom-8 right-4 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition transform hover:scale-110 z-40" title="Agendar cita por WhatsApp" target="_blank" rel="noopener noreferrer">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <use xlink:href="assets/icons/sprite.svg#icon-whatsapp"></use>
+        </svg>
+    </a>
+
+    <!-- Footer con Redes Sociales -->
+    <footer id="redes" class="bg-black/90 text-white py-6 px-4 mt-8 border-t border-gray-700">
+        <div class="flex flex-col items-center gap-4">
+            <h3 class="font-semibold text-lg">Síguenos</h3>
+            <div class="flex gap-4 justify-center">
+                <a class="bg-blue-700 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+                href="https://www.facebook.com/profile.php?id=61581620253403&locale=es_LA" target="_blank" rel="noopener noreferrer">
+                    <svg width="28" height="28">
+                        <use xlink:href="assets/icons/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a class="p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-900"
+                href="https://www.instagram.com/barberstudio/" target="_blank" rel="noopener noreferrer">
+                    <svg width="28" height="28">
+                        <use xlink:href="assets/icons/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <a class="bg-slate-900 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform"
+                href="https://www.tiktok.com/@clasea_barber?_r=1&_t=ZS-969ZJIE3DbU" target="_blank" rel="noopener noreferrer">
+                    <svg width="28" height="28">
+                        <use xlink:href="assets/icons/sprite.svg#icon-tiktok"></use>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-sm text-gray-400">© 2026 Barber Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Flotante de Horarios y Ubicación -->
+    <div id="modalHorarios" class="fixed inset-0 bg-black/50 z-50 px-4 items-center justify-center" style="display: none;">
+        <div class="bg-gray-700/50 border-2 border-gray-600 rounded-2xl max-w-md w-full text-white shadow-2xl backdrop-blur-sm">
+            <div class="flex justify-between items-center p-6 border-b border-gray-600">
+                <h2 class="text-2xl font-bold">Horarios y Ubicación</h2>
+                <button onclick="cerrarModal()" class="text-gray-400 hover:text-white text-2xl">×</button>
+            </div>
+            <div class="p-6 space-y-4 max-h-96 overflow-y-auto">
+                <div>
+                    <h3 class="font-bold text-lg mb-2">Ubicación</h3>
+                    <p class="text-gray-300 text-sm">Barber Studio</p>
+                    <p class="text-white font-semibold text-sm">Dirección: 20 De Noviembre 157, San Vicente, 22900 San Vicente, B.C.</p>
+                    <a href="https://maps.app.goo.gl/SJZ7eLBkhZGDME899" 
+                    target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition text-sm inline-block mt-2">Ver en Google Maps →</a>
+                </div>
+                <hr class="border-gray-600">
+                <div>
+                    <h3 class="font-bold text-lg mb-3">Horarios de Atención</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Lunes - Viernes:</span>
+                            <span class="text-white font-semibold">9:00 AM - 6:00 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Sábado:</span>
+                            <span class="text-white font-semibold">9:00 AM - 5:00 PM</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-300">Domingo:</span>
+                            <span class="text-white font-semibold">Cerrado</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-gray-700">
+            
+            </div>
+            <div class="p-6 border-t border-gray-600">
+                <button onclick="cerrarModal()" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg transition">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function abrirModal() {
+            const modal = document.getElementById('modalHorarios');
+            modal.style.display = 'flex';
+        }
+        
+        function cerrarModal() {
+            const modal = document.getElementById('modalHorarios');
+            modal.style.display = 'none';
+        }
+        
+        // Cerrar modal al hacer clic fuera de él
+        document.getElementById('modalHorarios').addEventListener('click', function(e) {
+            if (e.target === this) {
+                cerrarModal();
+            }
+        });
+    </script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>:

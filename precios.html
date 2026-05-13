@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precios - Barber Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="max-w-xl mx-auto border border-black min-h-dvh bg-gradient-to-b from-black to-gray-500">
+    <!-- Botón de regresar fijo -->
+    <a href="index.html" class="fixed top-4 left-4 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition z-50" title="Regresar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 19l-7-7 7-7"></path>
+        </svg>
+    </a>
+
+    <header class="text-white flex items-center justify-between px-4 py-4">
+    </header>
+
+    <!-- Sección de Precios -->
+    <section id="precios" class="py-8 px-4 text-white precios-container min-h-96">
+        <img alt="Barber Studio Logo Fondo" src="assets/img/logo.webp" class="logo-bg">
+        <div class="precios-content">
+            <h2 class="text-2xl font-bold mb-6 text-left">Precios</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <!-- Tarjeta 1: Corte + Estilizado -->
+                <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                    <div class="flex items-center justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                        <img src="./assets/img/corte_estilizado.webp" alt="Corte + Estilizado" class="max-w-xs h-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-4 flex flex-col justify-center flex-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-300">Corte + Estilizado</p>
+                        <p class="text-2xl font-bold text-gray-300">$150</p>
+                    </div>
+                </div>
+                <!-- Tarjeta 2: Barba -->
+                <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                    <div class="flex items-center justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                        <img src="" alt="Barba" class="max-w-xs h-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-4 flex flex-col justify-center flex-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-300">Barba</p>
+                        <p class="text-2xl font-bold text-gray-300">$150</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Combo -->
+                <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                    <div class="flex items-center justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                        <img src="./assets/img/corte_esba.webp" alt="Corte + Estilizado + Barba" class="max-w-xs h-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-4 flex flex-col justify-center flex-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-300">Corte + Estilizado + Barba</p>
+                        <p class="text-2xl font-bold text-gray-300">$300</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Limpieza -->
+                <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                    <div class="flex items-center justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                        <img src="" alt="Limpieza de Contornos" class="max-w-xs h-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-4 flex flex-col justify-center flex-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-300">Limpieza de Contornos</p>
+                        <p class="text-2xl font-bold text-gray-300">$100</p>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 5: Diseño de Cejas -->
+                <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                    <div class="flex items-center justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                        <img src="./assets/img/ceja.jpeg" alt="Diseño de Cejas" class="max-w-xs h-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-4 flex flex-col justify-center flex-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-300">Ceja</p>
+                        <p class="text-2xl font-bold text-gray-300">$50</p>
+                    </div>
+                </div>      
+
+                <!-- Tarjeta 5: Paquete -->
+                <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                    <div class="flex items-center justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                        <img src="" alt="Paquete Regular" class="max-w-xs h-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-4 flex flex-col justify-center flex-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-300">Paquete Regular</p>
+                        <p class="text-2xl font-bold text-gray-300">$200</p>
+                    </div>
+                </div>
+
+                <!-- Paquete VIP -->
+                <div class="bg-gray-700/50 hover:bg-gray-700/70 rounded-2xl border border-gray-600 shadow-lg hover:shadow-xl transition transform hover:scale-105 cursor-pointer overflow-hidden flex">
+                    <div class="flex items  -center justify-center w-40 h-40 bg-gray-600/30 flex-shrink-0">
+                        <img src="./assets/img/paq_vip.webp" alt="Paquete Completo" class="max-w-xs h-full object-contain rounded-lg">
+                    </div>
+                    <div class="p-4 flex flex-col justify-center flex-1">
+                        <p class="text-sm font-semibold mb-2 text-gray-300">Paquete VIP</p>
+                        <p class="text-sm font-semibold text-gray-400">Corte, barba, ceja y facial</p>
+                        <p class="text-2xl font-bold text-gray-300">$500</p>
+                    </div>
+                </div>                 
+
+    <!-- Botón Flotante para Agendar por WhatsApp -->
+    <a href="https://wa.me/526462413522" class="fixed bottom-8 right-4 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition transform hover:scale-110 z-40" title="Agendar cita por WhatsApp" target="_blank" rel="noopener noreferrer">
+        <svg width="24" height="24">
+            <use xlink:href="assets/icons/sprite.svg#icon-whatsapp"></use>
+        </svg>
+    </a>
+
+    <!-- Footer con Redes Sociales -->
+    <footer class="bg-black/90 text-white py-6 px-4 mt-8 border-t border-gray-700">
+        <div class="flex flex-col items-center gap-4">
+            <h3 class="font-semibold text-lg">Síguenos</h3>
+            <div class="flex gap-4 justify-center">
+                <a class="bg-blue-700 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform" href="https://www.facebook.com/profile.php?id=61581620253403&locale=es_LA" target="_blank" rel="noopener noreferrer">
+                    <svg width="28" height="28">
+                        <use xlink:href="assets/icons/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a class="bg p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform bg-gradient-to-tr from-yellow-500 via-pink-500 to-purple-900" href="https://www.instagram.com/barberstudio/" target="_blank" rel="noopener noreferrer">
+                    <svg width="28" height="28">
+                        <use xlink:href="assets/icons/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+                <a class="bg-slate-900 p-2 w-12 h-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform" href="https://www.tiktok.com/@barberstudio" target="_blank" rel="noopener noreferrer">
+                    <svg width="28" height="28">
+                        <use xlink:href="assets/icons/sprite.svg#icon-tiktok"></use>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-sm text-gray-400">© 2026 Barber Studio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
