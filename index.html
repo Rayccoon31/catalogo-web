@@ -21,7 +21,6 @@ bg-gradient-to-b from-black  to-gray-500">
     <header class="text-white" id="inicio">
         <img alt="Barber Studio Logo" src="assets/img/logo.webp" class="logo-fade w-full">
         <h1 class="text-center text-2xl font-bold py-2">Barber Studio</h1>
-        <!-- Navegación -->
         <nav class="flex justify-center gap-6 pb-6 text-sm md:text-base">
             <a href="precios.html" class="hover:text-blue-400 transition font-semibold">Precio Cortes</a>
             <a href="productos.html" class="hover:text-blue-400 transition font-semibold">Productos</a>
@@ -31,12 +30,10 @@ bg-gradient-to-b from-black  to-gray-500">
     </header>
 
 
-    <!-- Sección de Trabajos Hechos -->
     <section id="trabajos" class="py-8 px-4 text-white">
         <h2 class="text-2xl font-bold mb-6 text-center">Nuestros Servicios</h2>
         <div class="space-y-4">
 
-            <!-- Botón de Horarios -->
             <button onclick="abrirModal()" class="w-full text-left bg-gray-800/50 p-4 rounded-lg border border-gray-700 hover:border-blue-500 transition cursor-pointer hover:bg-gray-800/70">
                 <h3 class="font-bold text-lg mb-2">Horarios y Ubicación</h3>
                 <p class="text-gray-300 text-sm mb-2">Consulta nuestros horarios de atención y ubicación</p>
@@ -61,14 +58,12 @@ bg-gradient-to-b from-black  to-gray-500">
         </div>
     </section>
 
-    <!-- Botón Flotante para Agendar por WhatsApp -->
     <a href="https://wa.me/526462413522" class="fixed bottom-8 right-4 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition transform hover:scale-110 z-40" title="Agendar cita por WhatsApp" target="_blank" rel="noopener noreferrer">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
             <use xlink:href="assets/icons/sprite.svg#icon-whatsapp"></use>
         </svg>
     </a>
 
-    <!-- Footer con Redes Sociales -->
     <footer id="redes" class="bg-black/90 text-white py-6 px-4 mt-8 border-t border-gray-700">
         <div class="flex flex-col items-center gap-4">
             <h3 class="font-semibold text-lg">Síguenos</h3>
@@ -96,7 +91,6 @@ bg-gradient-to-b from-black  to-gray-500">
         </div>
     </footer>
 
-    <!-- Modal Flotante de Horarios y Ubicación -->
     <div id="modalHorarios" class="fixed inset-0 bg-black/50 z-50 px-4 items-center justify-center" style="display: none;">
         <div class="bg-gray-700/50 border-2 border-gray-600 rounded-2xl max-w-md w-full text-white shadow-2xl backdrop-blur-sm">
             <div class="flex justify-between items-center p-6 border-b border-gray-600">
@@ -149,7 +143,6 @@ bg-gradient-to-b from-black  to-gray-500">
             modal.style.display = 'none';
         }
         
-        // Cerrar modal al hacer clic fuera de él
         document.getElementById('modalHorarios').addEventListener('click', function(e) {
             if (e.target === this) {
                 cerrarModal();
